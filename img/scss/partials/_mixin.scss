@@ -1,7 +1,0 @@
-@mixin pozicioniranje($fd: row,$jc: space-between, $ai: center, $wr:wrap){
-    display: flex;
-    flex-direction: $fd;
-    justify-content: $jc;
-    align-items: $ai;
-    flex-wrap: $wr;
-}
