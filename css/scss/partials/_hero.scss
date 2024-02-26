@@ -1,0 +1,105 @@
+#pozadina{
+    position: relative;
+    height: 1070px;
+    
+    .pozadinaVideo{
+        width: 100%;  
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+    }
+}
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+ 
+    .flex1{
+        @include pozicioniranje;
+        #logo{
+            width:147px;
+            img{
+                width:147px;
+            }
+        }
+        nav{
+            ul{
+                @include pozicioniranje(row,space-evenly,center,wrap);
+                li{
+                    font-size: 22px;
+                }
+            }
+        }
+     }
+     .pozadinaVideo{
+        position: absolute;
+        z-index: -1;
+     }
+    
+}
+main{
+    width:70%;
+    position: absolute;
+    top:250px;
+    border-radius: 24px;
+    background:(rgba($bg-color,0.5));;
+    color:$text-color;
+    padding: 0px 20px;
+    box-shadow: 0px 0px 25px 0px black;
+    @include pozicioniranje(row,space-around,center);
+    .tekst{
+        h1{
+            margin:15px 0px ;
+            font-size: 40px;
+        }
+        h2{
+            font-size: 28px;
+            font-weight: 650;
+        }
+        p{
+            margin:12px 0px ;
+            font-weight: 380;
+        }
+    }
+    .mojaSlika{
+        img{
+            width:100%;
+        }
+    }
+}
+.flexx{
+    @include pozicioniranje(row,center,center,nowrap);
+    section{
+        @include pozicioniranje(row,space-evenly,center,wrap);
+        width:45%;
+        position:absolute;
+        top: 1020px;
+        
+        background:linear-gradient($text-color -1000px,$bg-color);
+        border-radius: 34px;
+        padding: 15px 20px;
+        color:$text-color;
+        box-shadow: 0px 0px 25px 0px black;
+        article{
+            @include pozicioniranje(row,space-evenly,center,wrap);
+            width:20%;
+            h4{
+                color:$third-color;
+            }
+        }
+        .pdr{
+            width: 250px;
+            padding: 0px 45px;
+            border-right: 1px solid $third-color;
+            border-left: 1px solid $third-color;
+        }
+        .pdr2{
+            width: 180px;
+        }
+        .pdr3{
+            width:150px;
+        }
+    }
+}

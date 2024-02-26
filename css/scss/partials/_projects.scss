@@ -1,0 +1,57 @@
+#projects{
+    background-color: rgba($bg-color,0);
+    padding: 50px 0px 100px 0px;
+    .holder{
+        p{
+            text-align: center;
+            color: $third-color;
+        }
+        h2{
+            text-align: center;
+            color:$text-color;
+            &:after {
+                content:"";
+                width:7.5%;
+                height:2px;
+                background-color:$third-color;
+                display:block;
+                margin: 0px auto;
+                margin-top: 10px;
+                
+              }
+        }
+    }
+    .myProjects{
+        @include pozicioniranje(row,space-evenly,center,wrap);
+        font-size: 24px;
+        margin-bottom: 50px;
+        p{
+            color:$text-color;
+        }
+        .project{
+            width:570.9px;
+            padding: 0px 10px;
+            img{
+                width:100%;
+                box-shadow: 0px 0px 5px 0px $third-color;
+                border-radius: 24px;
+                &:hover{
+                    box-shadow: 0px 0px 30px 0px $third-color;
+                    transition:0.3s all;
+                }
+            }
+            p{
+                margin-top: 20px;
+                text-shadow: 3px 3px 3px $third-color;
+            }
+        }
+        .gm{
+            margin-top: 70px;
+            margin-left:20px;
+            margin-right: 20px;
+        }
+        .gm2{
+            margin-top: 120px;
+        }
+    }
+}
